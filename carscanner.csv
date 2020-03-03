@@ -1,0 +1,27 @@
+Name;ShortName;ModeAndPID;Equation;Min Value;Max Value;Units;Header
+E-Maschine Strom Istwert;Motor I;22147D;ShortSigned(A,B)/100;;;A;7E0
+Aktuelle Drehzahl des Elektromotors;Motor n;22149A;(A*256+B)/4;;;rpm;7E0
+Leistungsaufnahme E-Maschine Istwert;Motor P;22147E;ShortSigned(A,B)*0.0096;;;kW;7E0
+E-Maschine Moment Istwert;Motor M;22147F;ShortSigned(A,B)/3;;;Nm;7E0
+E-Maschine Spannung Istwert;Motor U;221484;(A*256+B)/32;;;V;7E0
+Verbraucherstrom im HV-Bordnetz Istwert;HV-Netz I;221617;ShortSigned(A,B)/32;;;A;7E0
+Leistungsabgabe Hybrid Batterie Istwert;Batterie P;221485;ShortSigned(A,B)/250;;;kW;7E0
+HybridBattery_battery_performance_maximum_value;Batterie max. Perf.;221502;(A*256+B)/250;;;kW;7E0
+Hybrid Batterie Temperatur Relativwert;Batterie Temp. relativ;22149B;(A*256+B)/100;;;%;7E0
+Hybrid Batterie Temperaturbelastungsindikator;Batt. Temp.bel. relativ;221165;(A*256+B)/100;;;%;7E0
+Restlaufzeit der Fahrbatterie;SoC;22F45B;A/2.55;;;%;7E0
+Aussentemperatur;T Außen;22F446;A/8;;;°C;7E0
+Gaspedalstellung;Pedal;22F449;A/255*100;;;%;7E0
+Fahrzeuggeschwindigkeit;Geschw.;22F40D;A;;;km/h;7E0
+Spannung der Hochvolt-Batterie;Batterie U;221E3B;(A*256+B)/4;;;V;7E5
+Strom der Hochvolt / Hybrid Batterie;Batterie I;221E3D;Signed(B+248)/10;;;A;7E5
+Höchste gemessene Temperatur;Batt. Tmax;221E0E;(A*256+B)/64;;;°C;7E5
+Geber höchste gemessene Temperatur;Batt. Tmax Index;221E0E;D;;;;7E5
+Niedrigste gemessene Temperatur;Batt. Tmin;221E0F;(A*256+B)/64;;;°C;7E5
+Geber niedrigste gemessene Temperatur;Batt. Tmin Index;221E0F;D;;;;7E5
+maximale Spannung der Batteriezellen;Batt. UZelle max;221E33;(A*256+B)/4096;;;V;7E5
+Index Zelle mit maximaler Spannung;Batt. Index UZelle max;221E33;D;;;;7E5
+minimale Spannung der Batteriezellen;Batt. UZelle min;221E34;(A*256+B)/4096;;;V;7E5
+Index Zelle mit minimaler Spannung;Batt. Index UZelle min;221E34;D;;;;7E5
+Batterieverlustleistung;Batt. PVerlust;22188D;(A*256+B);;;;7E5
+Ladezustand;SoC;22028C;A/2.55;;;%;7E5
