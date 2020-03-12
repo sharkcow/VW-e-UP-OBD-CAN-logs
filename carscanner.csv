@@ -10,11 +10,11 @@ HybridBattery_battery_performance_maximum_value;Batterie max. Perf.;221502;(A*25
 Hybrid Batterie Temperatur Relativwert;Batterie Temp. relativ;22149B;(A*256+B)/100;;;%;7E0
 Hybrid Batterie Temperaturbelastungsindikator;Batt. Temp.bel. relativ;221165;(A*256+B)/100;;;%;7E0
 Restlaufzeit der Fahrbatterie;SoC;22F45B;A/2.55;;;%;7E0
-Aussentemperatur;T Außen;22F446;A/8;;;°C;7E0
+Aussentemperatur;T_Außen;22F446;A/8;;;°C;7E0
 Gaspedalstellung;Pedal;22F449;A/255*100;;;%;7E0
 Fahrzeuggeschwindigkeit;Geschw.;22F40D;A;;;km/h;7E0
 Spannung der Hochvolt-Batterie;Batterie U;221E3B;(A*256+B)/4;;;V;7E5
-Strom der Hochvolt / Hybrid Batterie;Batterie I;221E3D;Signed(B+248)/10;;;A;7E5
+Strom der Hochvolt / Hybrid Batterie;Batterie I;221E3D;(A*256+B-2048)/10;;;A;7E5
 Höchste gemessene Temperatur;Batt. Tmax;221E0E;(A*256+B)/64;;;°C;7E5
 Geber höchste gemessene Temperatur;Batt. Tmax Index;221E0E;D;;;;7E5
 Niedrigste gemessene Temperatur;Batt. Tmin;221E0F;(A*256+B)/64;;;°C;7E5
@@ -25,3 +25,11 @@ minimale Spannung der Batteriezellen;Batt. UZelle min;221E34;(A*256+B)/4096;;;V;
 Index Zelle mit minimaler Spannung;Batt. Index UZelle min;221E34;D;;;;7E5
 Batterieverlustleistung;Batt. PVerlust;22188D;(A*256+B);;;;7E5
 Ladezustand;SoC;22028C;A/2.55;;;%;7E5
+Batterietemperatur;Tbat;222A0B;(A*256+B)/64;;;°C;7E5
+DCDC-Wandler Temperatur, Istwert;T_DCDC;22 3E B5;(A*256+B)/64;;;°C;7E6
+Phasenstrom Phase U;I_Ph,U;22 3E F9;ShortSigned(A,B)/16;;;A;7E6
+Phasenstrom Phase V;I_Ph,V;22 3E FA;ShortSigned(A,B)/16;;;A;7E6
+Phasenstrom Phase W;I_Ph,W;22 3E FB;ShortSigned(A,B)/16;;;A;7E6
+Temperatur elektrische Maschine;T_Mot;22 3E 94;(A*256+B)/64;;;°C;7E6
+E-Maschine elektrische Leistung;P_el,Mot;22 46 56;ShortSigned(A,B)*16;;;W;7E6
+E-Maschine mechanische Leistung;P_mech,Mot;22 46 58;ShortSigned(A,B)*16;;;W;7E6
