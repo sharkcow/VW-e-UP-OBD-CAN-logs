@@ -10,5 +10,6 @@ list of (selected) custom OBD2-codes to be imported in Car Scanner, Torque or th
 
 revision history:
 
-20-03-11: added first codes from ECU
+20-03-11: added first codes from ECU 51 (electric drive)
+
 20-03-02: initial version
