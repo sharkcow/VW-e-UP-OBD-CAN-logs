@@ -1,0 +1,18 @@
+Name;ShortName;ModeAndPID;Equation;Min Value;Max Value;Units;Header
+Spannung der Hochvolt-Batterie;Batterie U;221E3B;(A*256+B)/4;;;V;7E5
+Strom der Hochvolt / Hybrid Batterie;Batterie I;221E3D;(A*256+B-2048)/10;;;A;7E5
+Höchste gemessene Temperatur;Batt. Tmax;221E0E;(A*256+B)/64;;;°C;7E5
+Geber höchste gemessene Temperatur;Batt. Tmax Index;221E0E;D;;;;7E5
+Niedrigste gemessene Temperatur;Batt. Tmin;221E0F;(A*256+B)/64;;;°C;7E5
+Geber niedrigste gemessene Temperatur;Batt. Tmin Index;221E0F;D;;;;7E5
+maximale Spannung der Batteriezellen;Batt. UZelle max;221E33;(A*256+B)/4096;;;V;7E5
+Index Zelle mit maximaler Spannung;Batt. Index UZelle max;221E33;D;;;;7E5
+minimale Spannung der Batteriezellen;Batt. UZelle min;221E34;(A*256+B)/4096;;;V;7E5
+Index Zelle mit minimaler Spannung;Batt. Index UZelle min;221E34;D;;;;7E5
+Batterieverlustleistung;Batt. PVerlust;22188D;(A*256+B);;;;7E5
+Ladezustand;SoC 8C;22028C;A/2.55;;;%;7E5
+Batterietemperatur;Batterie T;222A0B;(A*256+B)/64;;;°C;7E5
+Zähler für Amperestunden Ladung;Batt. Ah geladen;221E32;(A*2^24+B*2^16+C*2^8+D)/549.3164;;;Ah;7E5
+Zähler für Amperestunden Entladung;Batt. Ah entladen;221E32;(Signed(E)*2^24+F*2^16+G*2^8+H)/549.3164;;;Ah;7E5
+Zähler für Kilowattstunden Ladung;Batt. kWh geladen;221E32;(I*2^24+J*2^16+K*2^8+L)/8583.073;;;kWh;7E5
+Zähler für Kilowattstunden Entladung;Batt. kWh entladen;221E32;(Signed(M)*2^24+N*2^16+O*2^8+P)/8583.073;;;kWh;7E5
